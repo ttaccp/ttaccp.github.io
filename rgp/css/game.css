@@ -1,0 +1,68 @@
+
+/*
+ * 鑳屾櫙灞� -- z-index:0
+ * 浜虹墿 -- z-index:1
+ * npc -- z-index:2
+ * 闅滅灞� -- z-index:3
+ * 绉诲姩璺緞 -- z-index:4
+ * 閬僵灞傚眰 -- z-index:5
+ */
+* { font-size: 9pt; margin: 0;padding: 0;}
+body { cursor:url('../red.cur'),auto; }
+.none { display: none; }
+.z0 { z-index: 0; }
+.z1 { z-index: 1; }
+.z2 { z-index: 2; }
+.z3 { z-index: 3; }
+.z4 { z-index: 4; }
+.z5 { z-index: 5; }
+
+.o2 { opacity: .2; }
+.o3 { opacity: .3; }
+.o4 { opacity: .4; }
+.o6 { opacity: .6; }
+
+/* 鑳屾櫙灞� */
+#underlay {position: absolute;background: url(../images/bg/bg.png) no-repeat;width: 1340px;height: 670px;left: 0;top: 0;}
+.d3 {
+    position: absolute;
+    background: url(../images/javascript-game-map45-0.png) no-repeat -192px -64px;
+    width: 64px;height: 32px;line-height: 32px;text-align: center;z-index: 0;}
+.d1 {
+    position: absolute;
+    background: url(../images/javascript-game-map45-0.png) no-repeat -192px -128px;
+    width: 64px;height: 32px;line-height: 32px;text-align: center;z-index: 0;}
+.d2 {position: absolute;background-image: url(../images/tile.gif);width: 64px;height: 32px;line-height: 32px;text-align: center;z-index: 0;}
+
+/* 闅滅灞� */
+.obstacle1 { position: absolute;background-image: url(../images/jz/3.png);width: 280px;height: 110px;left: 550px;top: 190px; }
+.obstacle2 { position: absolute;background-image: url(../images/jz/4.png);width: 210px;height: 150px;left: 460px;top: 300px; }
+.obstacle3 { position: absolute;background-image: url(../images/jz/5.png);width: 121px;height: 60px;left: 1010px;top: 290px; }
+.obstacle4 { position: absolute;background-image: url(../images/jz/6.png);width: 120px;height: 120px;left: 775px;top: 365px; }
+
+/* 涓昏浜虹墿 */
+.role { width:200px;height:200px;position:absolute; }
+/* 濯氱伒鐙� */
+.mlh_z0{ background:url(../images/rw/mlh.png); }
+.mlh_z1{ background:url(../images/rw/mlh-D1.png); }
+.mlh_z2{ background:url(../images/rw/mlh-D2.png); }
+
+/* 鍓戦渚� */
+.jfx_z0{ background:url(../images/rw/jfx.png); }
+.jfx_z1{ background:url(../images/rw/jfx-D1.png); }
+.jfx_z2{ background:url(../images/rw/jfx-D2.png); }
+
+/* 姝﹀皧绁� */
+.wzs_z0{ background:url(../images/rw/wzs.png); }
+.wzs_z1{ background:url(../images/rw/wzs-D1.png); }
+.wzs_z2{ background:url(../images/rw/wzs-D2.png); }
+
+/* 娣峰ぉ榄� */
+.htm_z0{ background:url(../images/rw/htm.png); }
+.htm_z1{ background:url(../images/rw/htm-D1.png); }
+.htm_z2{ background:url(../images/rw/htm-D2.png); }
+
+/* 绁炲ぉ鍏� */
+.stb_z0{ background:url(../images/rw/stb.png); }
+.stb_z1{ background:url(../images/rw/stb-D1.png); }
+.stb_z2{ background:url(../images/rw/stb-D2.png); }
