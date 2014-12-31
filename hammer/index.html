@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="utf-8" />
+        <meta name="robots" content="NOINDEX,NOFOLLOW" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta content="telephone=no" name="format-detection" />
+        <title>swiper</title>
+        <link rel="stylesheet" type="text/css" href="swiper.css"/>
+        <style type="text/css">
+        	body,
+        	p{
+        		margin: 0;
+        		padding: 0;
+        	}
+        	#body,
+        	body{
+        		overflow: hidden;
+        	}
+        	p{
+        		font-size: 30px;
+        		text-align: center;
+        		color: #FF0000;
+        	}
+        	#tip{
+        		position: absolute;
+        		bottom: 0;
+        		left: 0;
+        	}
+        </style>
+    </head>
+    <body>
+		
+		<div id="body">
+			<div class="swiper-wrapper">
+				<p class="swiper-slide">1</p>
+				<p class="swiper-slide">2</p>
+				<p class="swiper-slide">3</p>
+				<p class="swiper-slide">4</p>
+				<p class="swiper-slide">5</p>
+				<p class="swiper-slide">6</p>
+				<p class="swiper-slide">7</p>
+				<p class="swiper-slide">8</p>
+				<p class="swiper-slide">9</p>
+				<p class="swiper-slide">10</p>
+			</div>
+		</div>
+		<div id="tip">
+			跳转到
+			<input type="text" id="num" />
+			<input type="button" value="跳转" id="jump" />
+		</div>
+        
+        
+		<script src="zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="hammer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="swiper.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+        	
+        	var winH = $(window).height(),
+        		winW = $(window).width();
+        		
+        	$('#body').css({
+        		width: winW,
+        		height: winH
+        	})
+			var mySwiper = new Swiper('#body',{
+			    mode: 'vertical',	// 滚动方向
+//			    loop: true,			// 是否循环滚动
+//		     	speed: 350,			// 滚动速率
+//		     	autoplay: 3000,		// 自动播放(时间间隔)
+				resistance: "100%",	// 阻力（回弹效果）
+		     	autoplayDisableOnInteraction: false,		// 设置为false，播放后不会禁用用户交互，它将重新启动后每次交互。
+		     	onSlideChangeStart: function(swiper, type){	// 滚动开始	
+//		     		console.log(swiper);
+//		     		console.log(type);
+		     	},
+		     	onSlideChangeEnd: function(swiper, type){	// 滚动结束
+//		     		console.log(swiper);
+//		     		console.log(type);
+		     		console.log(swiper.activeLoopIndex)
+		     	}
+			  })
+			
+			var jumpBtn = Hammer($('#jump')[0]);
+			jumpBtn.on('tap', function(){
+				var num = parseInt($('#num').val()) - 1;
+				if (!isNaN(num)) {
+					mySwiper.swipeTo(num);
+				} else {
+					alert('无效的数字');
+					$('#num').val('');
+				}
+			});
+			
+			
+        </script>
+    </body>
+</html>
+
