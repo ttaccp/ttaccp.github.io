@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="utf-8" />
+        <meta name="robots" content="NOINDEX,NOFOLLOW" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta content="telephone=no" name="format-detection" />
+        <title>重力感应</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <style type="text/css">
+        	html, 
+        	body{
+        		margin: 0;
+        		padding: 0;
+        		background: #000000;
+        	}
+        	#pointer{
+        		width: 10px;
+        		height: 10px;
+        		background: #FFFFFF;
+        		border-radius: 50%;
+        		position: absolute;
+        	}
+        </style>
+    </head>
+    <body>
+		<div id="pointer"></div>
+    </body>
+    
+    <script type="text/javascript">
+    	var winW = window.screen.width / 2,
+    		winH = window.screen.height / 2;
+    		
+    	var orientationListener = function(evt){
+			if (!evt.gamma && !evt.beta) {
+				// angle=radian*180.0/PI 在firefox中x和y是弧度值,
+				evt.gamma = (evt.x * (180 / Math.PI)); //转换成角度值,
+				evt.beta = (evt.y * (180 / Math.PI)); //转换成角度值
+				evt.alpha = (evt.z * (180 / Math.PI)); //转换成角度值
+			}
+			var gamma = evt.gamma,
+				beta = evt.beta,
+				alpha = evt.alpha;
+			
+			if(evt.accelerationIncludingGravity){
+               // window.removeEventListener('deviceorientation', this.orientationListener, false);
+				gamma = event.accelerationIncludingGravity.x*10
+				beta = -event.accelerationIncludingGravity.y*10
+				alpha = event.accelerationIncludingGravity.z*10
+			}
+			
+			if (this._lastGamma != gamma || this._lastBeta != beta) {
+				
+                  var style = document.querySelector("#pointer").style;
+                  style.left = gamma/90 * winW + winW +"px";
+                  style.top = beta/90 * winH + winH +"px";
+                
+                this._lastGamma = gamma;
+                this._lastBeta = beta;
+              }
+    	}
+    	window.addEventListener('deviceorientation', orientationListener, false);
+        window.addEventListener('MozOrientation', orientationListener, false);
+        window.addEventListener('devicemotion', orientationListener, false);
+    </script>
+</html>
+
