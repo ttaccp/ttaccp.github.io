@@ -1,0 +1,330 @@
+﻿html,
+body {
+    width: 100%;
+    height: 100%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+body,
+p,
+.p{
+    margin: 0;
+    padding: 0;
+}
+#body,
+body{
+    overflow: hidden;
+    font-size: 1em;
+    font-family: Arial;
+    height: 100%;
+}
+.p{
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+.p::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-size: 45px;
+    width: 45px;
+    height: 45px;
+    left: 50%;
+    top: 50%;
+    margin: -22px 0 0 -22px;
+    -webkit-animation: rotate 1.5s linear infinite;
+    z-index: 1;
+}
+@-webkit-keyframes rotate{
+    from{
+        -webkit-transform: rotate(0deg)
+    }
+    to{
+        -webkit-transform: rotate(360deg)
+    }
+}
+.p .img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.stepbox {
+    display: none;
+}
+.stepbox .touchcontinue{
+    position: absolute;
+    width: 62px;
+    left: 50%;
+    bottom: 3%;
+    margin-left: -31px;
+}
+.stepbox .touchcontinue .upbtn {
+    display: block;
+    width: 62px;
+    height: 62px;
+    background-size: 398px 165px;
+    background-position: -337px -89px;
+}
+.stepbox .touchcontinue .flash {
+    display: block;
+    height: 43px;
+    position: relative;
+}
+.stepbox .touchcontinue .flash:after{
+    content: '';
+    display: block;
+    width: 18px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -9px;
+    background-size: 398px 165px;
+    background-position: -360px -63px;
+    -webkit-animation: upflash 1s linear infinite;
+}
+@-webkit-keyframes upflash{
+    0%{
+        -webkit-transform: translate3d(0px, 5px, 0px);
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform: translate3d(0px, -20px, 0px);
+        opacity: 0;
+    }
+}
+
+.stepbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    font-family: 'Microsoft YaHei';
+    overflow: hidden;
+}
+.stepbox.step1 .text {
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 10px;
+    text-align: center;
+    text-shadow: 0 0 5px #006cff;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+.stepbox.step1 .title{
+    width: 317px;
+    height: 165px;
+    display: block;
+    background-size: 398px 165px;
+    margin: 0 auto;
+    position: relative;
+    left: 25px;
+    top: 40%
+}
+.stepbox .ul {
+    overflow: hidden;
+    padding: 0;
+    margin: 0 auto;
+    width: 251px;
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    margin-left: -125px;
+}
+.stepbox .ul li{
+    font-size: 0.625rem;
+    color: #fff;
+    list-style: none;
+    float: left;
+}
+.stepbox .ul li.li1{
+    text-align: right;
+}
+.stepbox .ul li.li2{
+    border-left: 1px solid #0d6448;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.stepbox .ul li .d{
+    margin-bottom: 2px;
+}
+.stepbox .ul li .s2{
+    background: #168480;
+    padding: 0 5px;
+    font-size: 0.625rem;
+}
+.stepbox .textbox {
+    color: #fff;
+    width: 248px;
+    height: 229px;
+    margin: 0 auto;
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    padding: 20px 30px 0;
+    position: absolute;
+    left: 50%;
+    top: 21%;
+    margin-left: -124px;
+}
+.stepbox .textbox .t{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.stepbox .textbox .s{
+    color: #35cf87;
+    margin-bottom: 10px;
+}
+.step2 .textbox{
+    background-position: 0 0;
+}
+.step3 .textbox{
+    background-position: 0 -230px;
+    padding-top: 30px;
+}
+.step4 .textbox{
+    background-position: 0 -460px;
+    padding: 20px 16px 0;
+}
+.step4 .t1{
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+}
+.step4 .t1 .s2{
+    color: #f06848;
+    font-size: 0.875rem;
+}
+.step5 .textbox{
+    background-position: 0 -690px;
+}
+.step6 .ul li .s2,
+.step5 .ul li .s2,
+.step4 .ul li .s2 {
+    background: #b7462d;
+}
+.step6 .ul li.li2,
+.step5 .ul li.li2,
+.step4 .ul li.li2 {
+    border-left: 1px solid #652a1d;
+}
+.step6 .textbox{
+    background-position: 0 -690px;
+    padding: 20px 20px 0;
+    height: 228px;
+}
+.step6 .textbox .t2{
+    font-size: 1rem;
+    color: #ff9023;
+    padding-bottom: 20px;
+}
+.step6 .textbox .t2 .s3{
+    font-size: 0.75rem;
+    color: #fff;
+}
+.step6 .textbox .t3{
+    margin-bottom: 10px;
+    font-size: 0.75rem;
+}
+.step6 .textbox .t3 .s3{
+    color: #ff9023;
+}
+.step7 .textbox {
+    background-position: 0 -918px;
+    padding-top: 40px;
+}
+.step7 .ul li .s2 {
+    background: #1f507e;
+}
+.step7 .ul li.li2 {
+    border-left: 1px solid #1f507e;
+}
+.step7 .textbox .t2{
+    color: #29a0e6;
+    margin-bottom: 20px;
+    font-size: 1.125rem;
+}
+.step7 .textbox .t2 .s2{
+    color: #fff;
+    display: block;
+    font-size: 1rem;
+}
+.step8 .ul li .s2 {
+    background: #286ad8;
+}
+.step8 .ul li.li2 {
+    border-left: 1px solid #214d97;
+}
+.inputbox {
+    width: 294px;
+    height: 343px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    margin-left: -132px;
+    margin-top: -80px;
+    box-sizing: border-box;
+    padding-top: 120px;
+}
+.inputbox .txt{
+    width: 153px;
+    height: 31px;
+    font-size: 1rem;
+    color: #303030;
+    padding: 0 10px;
+    background: #fff;
+    border: 0;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 0;
+    position: relative;
+    left: -12px;
+}
+.inputbox .btn{
+    width: 173px;
+    height: 31px;
+    background: #286ad8;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    color: #fff;
+    font-size: 1rem;
+    border: 0;
+    display: block;
+    margin: 0 auto 30px;
+    position: relative;
+    left: -12px;
+}
+.inputbox .time{
+    text-align: center;
+    color: #fff;
+    position: relative;
+    left: -12px;
+    font-family: Arial;
+}
+.step8 .contact {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    font-family: Arial;
+    font-size: 0.75rem;
+    bottom: 3%;
+    width: 100%;
+}
+.step8 .contact .s{
+    color: #2e5ca7;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
