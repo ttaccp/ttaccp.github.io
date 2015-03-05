@@ -70,8 +70,8 @@ var StartMenu = cc.Layer.extend({
         var newGameBtn1 = new cc.MenuItemSprite(newGame1, newGame2, null, function(){
         	cc.log('游客模式');
         	this.playEffect();
-        	
-        	this.loading();
+        	debugger
+        	Tips.show(this._container, {txt: '暂不支持 游客模式!'});
         	
         }.bind(self));
         newGameBtn1.setPosition(center.x, center.y / 2);
@@ -179,9 +179,9 @@ var StartMenu = cc.Layer.extend({
     },
     loading: function(){
     	
-    	LoadData.show(this._container, {
-    		txt: '暂不支持 游客模式',
-    		autoHide: true
-    	});
+//  	LoadData.show(this._container, {
+//  		txt: '暂不支持 游客模式',
+//  		autoHide: true
+//  	});
     }
 });

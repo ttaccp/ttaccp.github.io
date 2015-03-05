@@ -13,6 +13,7 @@
     	"src/config/gameconfig.js",
         "src/resources.js",
         "src/loader.js",
+        "src/Tips.js",
         "src/startMenu.js",
         "src/loadData.js"
     ]
