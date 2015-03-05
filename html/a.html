@@ -1,0 +1,518 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>任我行咨询CRM真棒，招个人都搞得这么轰动，下血本啊，小伙伴们快来看看吧。</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="format-detection" content="address=no;">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link type="text/css" href="http://c.58cdn.com.cn/ds/qiye/m/zp_poster.css?v2.06" rel="stylesheet" />
+<link type="text/css" href="http://c.58cdn.com.cn/ds/qiye/m/reward_business.css?v2.06" rel="stylesheet" />
+
+</head>
+<body>
+<div id="poster_contain">
+	<section class="poster_wrap load">
+	  <div class="p_loading">
+	    <div class="p_loading_logo"></div>
+	    <p class="p_loading_tip">新生活，从新工作开始</p>
+	  </div>
+	</section>
+</div>
+<div class="arrow_top"><span></span></div>
+<div class="layer"></div>
+<div class="wx_layer"></div>
+<!-- S=商家悬赏 -->
+<div class="reward_btn_modular" style="display:none;">
+    <div class="reward_home_con">
+		<span class="reward_home_btn"></span>
+    </div>
+    <div class="reward_plus">
+		<a class="reward_plus_item" href="javascript:;" id="reward_start">发起职位悬赏</a>
+		<a class="reward_plus_item" href="javascript:;" id="reward_detail">悬赏明细</a>
+		<a class="reward_plus_item" href="javascript:;" id="reward_share">分享</a>
+    </div>
+</div>
+<!-- E=商家悬赏 -->
+</body>
+</html>
+
+<script type="text/javascript" charset="urf-8" src="http://webapp.58.com/static/js/jq.mobi.min.js"></script>
+<script src="/js/weizhanlog.js?v1.0"></script>
+<script type="text/javascript">
+var title = "任我行CRM真棒，招个人都搞得这么轰动，下血本啊，小伙伴们快来看看吧。";
+var picurl = "http://img.58cdn.com.cn/ds/qiye/m/wzp_logo.png";
+var url = "http://w.58.com/poster/zp/29717954950433?source=zhuzhan&random=1425538321069&from=timeline&isappinstalled=1";
+var desc = "我司正在招聘人才，待遇福利优厚，欢迎各路人才，快来看看吧。";
+
+document.domain = '58.com';
+var zanid = "29717954950433";
+var userid = "2884058242055";
+</script>
+
+
+	<script type="text/javascript" charset="utf-8" src="http://webapp.58.com/static/js/mclient.framework5.js?cachevers=1"></script>
+	<script type="text/javascript">
+	var jobShare=function(data,callback,shareto,extshareto,typestr,pagetypestr){
+	    var data = JSON.stringify(data);
+	    var param = {"action":"info_share","type":typestr,"data":data,"pagetype":pagetypestr,"shareto":shareto,"callback":callback};
+	    if(typeof extshareto !== 'undefined'){
+	        param["extshareto"] = extshareto;
+	    }
+	    $.mclient.nativeMethod(param);
+	};
+	var share = function(){
+		var hf_data = {
+				url:url,
+				title:title,
+				picurl:picurl,
+				content:desc,
+				placeholder:desc
+		};		
+		jobShare(hf_data,"","SINA","QQ,SINA,WEIXIN,FRIENDS","resumeshare","manage");
+	};
+	</script>
+
+<script type="text/javascript">
+var winWidth = window.innerWidth;
+var winHeight = window.innerHeight;
+var agent = navigator.userAgent.toLowerCase();
+function screenFix(){
+	$("#poster_contain").css({
+		width:winWidth+"px",
+		height:winHeight+"px"
+	});
+}
+
+//获取url参数
+function getUrlQueryParam(name) {
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+	var r = window.location.search.substr(1).match(reg);
+	if (r != null) {
+		return unescape(r[2]);	
+	} 
+	return "";
+}
+
+$(function(){
+	var winWidth = window.innerWidth;
+	var winHeight = window.innerHeight;
+	$(window).on('scroll.elasticity', function (e) {
+		e.preventDefault();
+	}).on('touchmove.elasticity', function (e) {
+		e.preventDefault();
+	});
+	
+	screenFix();
+	var orientationEvent = ('onorientationchange' in window) ? 'orientationchange' : 'resize';
+    window.addEventListener(orientationEvent, function() {
+        window.setTimeout(function(){
+        	screenFix();
+        }, 600);
+    }, false);
+    
+    $(".layer, .wx_layer").on("click", function(){
+    	$(this).hide();
+    });
+    
+    var fromParam=getUrlQueryParam("from");
+    if(fromParam!=""){
+    	fromParam="&from="+fromParam;
+    }
+	var data = '<section class="poster_wrap index"><div class="poster_home_page"><div class="poster_logo_con"><div class="p_logo_b01"></div><div class="p_logo_b02"></div><div class="poster_logo"><img src="http://img.58cdn.com.cn/ds/qiye/m/wzp_logo.png"></div></div><h1 class="poster_tit">任我行咨询CRM</h1><p class="poster_details">诚聘英才，欢迎您加入</p></div><div class="footer_msg">机遇，等你发现</div></section><section class="poster_wrap abus"><div class="poster_home_page"><div class="poster_logo_con"><div class="p_logo_b01"></div><div class="p_logo_b02"></div><div class="poster_logo"><img src="http://img.58cdn.com.cn/ds/qiye/m/wzp_logo.png"></div></div><div class="about_us"><h3 class="about_us_tit">关于我们</h3><div class="about_us_msg"><div class="about_us_msg_p">任我行软件股份有限公司（简称“任我行集团”），作为国内企业管理软件的领导厂商，旗下拥有中国驰名商标“管家婆”、任我行、千方百剂等多个品牌，全国6个大区，20多个分支机构，1000多家咨询服务中心。产品涵盖进销存、财务、ERP、 CRM、OA、电子商务和移动商务等领域。目前，任我行软件产品已经成功地应用于国内及海外70多万家企业。“任我行咨询”，为任我行集团旗下专门针对成长型企业的“高端品牌”。“任我行咨询”，作为国内第一个针对企业组织运营管理的“咨询-培训-软件”提供商，旨在帮助企业通过“管理培训+管理咨询+管理软件”，实施规范化、标准化建设，推动企业实现4个现代化（复杂问题简单化、简单问题流程化、流程问题标准化、标准问题信息化），解放一把手，《每周只到公司一天》，最终实现《局外管理》，做到事业成功、人生成功。作为“局外管理”倡导者、推动者和践行者，“推动企业自动运营、打造局外管理企业家”为我们坚定不移的神圣社会使命！</div></div></div></div></section><section class="poster_wrap welf">  <div class="company_intro">    <div class="company_intro_list">      <div class="company_intro_logo">        <i class="logo_ico city"></i>      </div>      <p class="company_intro_tit">成都</p>    </div>    <div class="company_intro_list">      <div class="company_intro_logo">        <i class="logo_ico num"></i>      </div>      <p class="company_intro_tit">500-999人</p>    </div>    <div class="company_intro_list">      <div class="company_intro_logo">        <i class="logo_ico nature"></i>      </div>      <p class="company_intro_tit">私营</p>    </div>  </div>  <div class="welfare">    <h2 class="welfare_tit">我们能给你的</h1>    <div class="welfare_con">      <div class="welfare_list">        <div class="welfare_list_l">          <div class="welfare_list_skew"><span class="welfare_list_details">福利待遇好</span></div>        </div>        <div class="welfare_list_r">          <div class="welfare_list_skew"><span class="welfare_list_details">发展前景好</span></div>        </div>      </div>      <div class="welfare_list">        <div class="welfare_list_l">          <div class="welfare_list_skew"><span class="welfare_list_details">晋升空间大</span></div>        </div>        <div class="welfare_list_r">          <div class="welfare_list_skew"><span class="welfare_list_details">提供培训</span></div>        </div>      </div>      <div class="welfare_list">        <div class="welfare_list_l">          <div class="welfare_list_skew"><span class="welfare_list_details">交通方便</span></div>        </div>        <div class="welfare_list_r">          <div class="welfare_list_skew"><span class="welfare_list_details">法定假日</span></div>        </div>      </div>    </div>  </div></section><section class="poster_wrap posit">  <h1 class="posit_tit col_white">我们招聘的职位</h1> <div class="posit_list_con">	<div class="posit_list_ul">					        <div class="posit_details" tel="13808054964" url="http://cd.58.com/yewu/21188794748303x.shtml" data-infoid="21188794748303"         data-shareTitle="" data-shareDesc=""        data-price="" data-num="" data-rewardid="" data-label="">          <div class="posit_details_head">            <h3 class="posit_details_tit">高级渠道经理</h3>            <span class="posit_details_money"><strong>面议</strong></span>            <p class="posit_details_tip">经验不限、学历大专</p>          </div>          <div class="job_details">            <p class="job_address">工作地点：成都高新区南延线</p>            <h3 class="job_name">任职要求：</h3>            <div class="job_msg">岗位职责：1、负责所辖地区的销售管理；&nbsp;<br/>2、负责地区销售渠道的建立、巩固和发展；&nbsp;<br/>3、负责经销商培训、地区市场规划、技术支持、市场支持等。&nbsp;<br/>4、负责公司产品在所辖地区的推广和发展。&nbsp;<br/>5、负责拓展空白区域经销商。&nbsp;<br/><br/> 任职资格：1、大专以上学历，计算机、市场营销、管理或相关专业；&nbsp;<br/>2、具备良好的沟通表达能力，文字能力，组织规划能力；&nbsp;<br/>3、能出差，有相关工作经验优先。<br/><br/>​联系方式：地址：中国·成都市人民南路南延线天府大道成都高新孵化园7号楼307室　<br/>邮编：610041<br/>电话：028-85351111&nbsp;<br/>传真：028-85351111-2&nbsp;<br/>网站：&nbsp;http://www.wecrm.com/</div>            </div>          <div class="posit_arrow_bot"></div>        </div>        	        <div class="posit_details" tel="13808054964" url="http://cd.58.com/yewu/21188778767511x.shtml" data-infoid="21188778767511"         data-shareTitle="" data-shareDesc=""        data-price="" data-num="" data-rewardid="" data-label="">          <div class="posit_details_head">            <h3 class="posit_details_tit">销售总监</h3>            <span class="posit_details_money"><strong>面议</strong></span>            <p class="posit_details_tip">经验不限、学历不限</p>          </div>          <div class="job_details">            <p class="job_address">工作地点：成都高新区南延线</p>            <h3 class="job_name">任职要求：</h3>            <div class="job_msg">岗位职责：1、负责公司开发的软件在所辖地区的销售管理；&nbsp;<br/>2、负责销售渠道的建立、巩固和发展；&nbsp;<br/>3、负责市场推动、经销商培训等。&nbsp;<br/><br/> 任职资格：1、您必须是一个激情而充满成功甚至伟大梦想的人；&nbsp;<br/>2、您能赶上“一个月不提升就已经落后”的企业学习氛围；&nbsp;<br/>3、您需要“永远在问道、活在问题中并突破重围，找到解决办法”；&nbsp;<br/>4、过去的经理证明您和同龄人不同寻常；&nbsp;<br/>5、您对高薪和高目标充满务必的热情<br/><br/>​联系方式：地址：中国·成都市人民南路南延线天府大道成都高新孵化园7号楼307室　<br/>邮编：610041<br/>电话：028-85351111&nbsp;<br/>传真：028-85351111-2&nbsp;<br/>网站：&nbsp;http://www.wecrm.com/</div>         </div>          <div class="posit_arrow_bot"></div>        </div>        	        <div class="posit_details" tel="13808054964" url="http://cd.58.com/zpguanggao/21188721333663x.shtml" data-infoid="21188721333663"         data-shareTitle="" data-shareDesc=""        data-price="" data-num="" data-rewardid="" data-label="">          <div class="posit_details_head">            <h3 class="posit_details_tit">高级文案</h3>            <span class="posit_details_money"><strong>面议</strong></span>            <p class="posit_details_tip">经验3-5年、学历大专</p>          </div>          <div class="job_details">            <p class="job_address">工作地点：成都高新区南延线</p>            <h3 class="job_name">任职要求：</h3>            <div class="job_msg">岗位职责：1、负责公司在自媒体(微博-公众微信-公司期刊)和互联网媒体上的软文传播.<br/>2、独立撰写各类稿件（新闻稿、综述稿、评论稿、专访稿等）、营销类文案、策划方案、报告等&nbsp;<br/> 任职资格：1、新闻学、传播学、中文、经济管理类相关专业，大专以上学历；<br/>2、熟悉IT行业，三年以上市场策划及文案工作经验，有整合推广成功案例者优先；<br/>3、能够准确捕捉产品亮点，具备恰如其分的文字表现能力；<br/>4、熟悉专业创意方法，思维敏捷，洞察力强，文字功底扎实，语言表达能力强；<br/>5、能独立完成项目、广告等推广文案的撰写<br/><br/>应聘要求：<br/>1-	带上曾经独立完成的软文作品；<br/>2-	提供自己维护的微博、微信账号。<br/><br/>工作时间：<br/>​​8：40-17：30，周末双休</div>            </div>          <div class="posit_arrow_bot"></div>        </div>        	        <div class="posit_details" tel="13808054964" url="http://cd.58.com/zpmeishu/21188698908814x.shtml" data-infoid="21188698908814"         data-shareTitle="" data-shareDesc=""        data-price="" data-num="" data-rewardid="" data-label="">          <div class="posit_details_head">            <h3 class="posit_details_tit">平面设计师/高级美工</h3>            <span class="posit_details_money"><strong>面议</strong></span>            <p class="posit_details_tip">经验1-2年、学历大专</p>          </div>          <div class="job_details">            <p class="job_address">工作地点：成都高新区南延线</p>            <h3 class="job_name">任职要求：</h3>            <div class="job_msg">岗位职责：1.&nbsp;负责公司平面设计、网站设计及软件界面设计工作；2.负责公司部分市场活动策划；3.&nbsp;有网站后台维护经验者、写作能力强者优先；<br/> 任职资格：1.&nbsp;美工水平非常熟练，能独立开展工作；<br/>2.&nbsp;有事业心，热爱学习；<br/>3.&nbsp;有志于向市场策划方向发展。<br/>4. 有创意礼品公司设计工作经验优先。<br/><br/>工作时间：8：40-17：30，周末双休</div>         </div>          <div class="posit_arrow_bot"></div>        </div>        	        <div class="posit_details" tel="13808054964" url="http://cd.58.com/tech/21188629213982x.shtml" data-infoid="21188629213982"         data-shareTitle="" data-shareDesc=""        data-price="" data-num="" data-rewardid="" data-label="">          <div class="posit_details_head">            <h3 class="posit_details_tit">安卓移动互联开发工程师</h3>            <span class="posit_details_money"><strong>面议</strong></span>            <p class="posit_details_tip">经验1-2年、学历大专</p>          </div>          <div class="job_details">            <p class="job_address">工作地点：成都高新区南延线</p>            <h3 class="job_name">任职要求：</h3>            <div class="job_msg">岗位职责：1、负责移动平台 Android 客户端的应用开发，完成公司下达的任务；&nbsp;<br/>2、负责 Android 手机平台应用软件的需求分析、功能设计、编码和测试；<br/>3、负责参与产品需求分析并参与技术实施方案设计；<br/>4、负责参与对手机软件系列产品进行维护和持续升级；<br/>5、学习和研究新的移动互联网技术以满足产品的需求。<br/><br/> 任职资格：1、本科以上学历，两年以上的 Android 开发经验,有作为主力工程师完整开发过一个以上 Andriod 应用的经验。<br/>2、精通 Java 开发语言；3、精通 Android 界面开发，熟悉屏幕分辨率兼容和操作系统版本兼容原理；4、能够搭建系统开发环境，并使用SVN、Git、TFS等版本控制工具；5、熟悉 Android 手机软件架构和开发工作；<br/>6、熟悉 Android 下网络通信原理和移动通信 API 接口；<br/>7、熟悉Android各种widget组件，能根据项目要求开发自定义控件；<br/>8、熟悉各种主流机型的特点、技术参数等；<br/>9、有至少一款商业化应用项目经验；<br/>10、责任心强，工作细心、踏实认真、较强的与人沟通能力，能够承受工作压力。<br/>工作时间：<br/>​8：40-17：30，周末双休</div></div>          <div class="posit_arrow_bot"></div>        </div>        	        <div class="posit_details" tel="13808054964" url="http://cd.58.com/tech/21188606292239x.shtml" data-infoid="21188606292239"         data-shareTitle="" data-shareDesc=""        data-price="" data-num="" data-rewardid="" data-label="">          <div class="posit_details_head">            <h3 class="posit_details_tit">IOS移动互联开发工程</h3>            <span class="posit_details_money"><strong>面议</strong></span>            <p class="posit_details_tip">经验1-2年、学历大专</p>          </div>          <div class="job_details">            <p class="job_address">工作地点：成都高新区南延线</p>            <h3 class="job_name">任职要求：</h3>            <div class="job_msg">岗位职责：1 负责IOS平台应用的程序设计、开发和优化；<br/>2 根据项目计划按时完成编码及测试工作；<br/>3 按照开发流程编写相应的开发文档。<br/> 任职资格：1.1年以上移动设备应用开发经验，有完整的产品开发经历和产品发布经验者优先；2.熟悉IOS应用开发框架；<br/>3.做事细致认真、良好的学习能力和团队合作能力；<br/>4.对移动设备应用程序用户体验有独到见解者优先；<br/>5.有APP Store上架应用者和对程序性能优化有独到见解者优先。<br/><br/>​工作时间：8：40-17：30，周末双休</div></div>          <div class="posit_arrow_bot"></div>        </div>        	        <div class="posit_details" tel="13808054964" url="http://cd.58.com/tech/21188526229134x.shtml" data-infoid="21188526229134"         data-shareTitle="" data-shareDesc=""        data-price="" data-num="" data-rewardid="" data-label="">          <div class="posit_details_head">            <h3 class="posit_details_tit">.NET互联网开发工程</h3>            <span class="posit_details_money"><strong>面议</strong></span>            <p class="posit_details_tip">经验不限、学历本科</p>          </div>          <div class="job_details">            <p class="job_address">工作地点：成都高新区南延线</p>            <h3 class="job_name">任职要求：</h3>            <div class="job_msg">岗位职责：1、负责软件功能模块代码开发、单元测试、版本维护；2、有关技术设计方案讨论、总结、及文档的编写；3、按项目进度要求及时完成开发任务；4、参与系统的需求调研、需求分析；5、完成上级领导交待的其他事宜。<br/> 任职资格：1、.net开发经验2年以上；2、熟悉.Net技术平台，精通C#语言、mvc、OOP和分层设计思想优先；3、精通B/S架构技术，熟练使用HTML、XML、Javascript、mssql、mysql、Css语言和AJAX技术；4、熟悉掌握SQL Server或Mysql等主流数据库系统，能够熟练使用SQL语言，掌握存储过程；5、学习能力强，能适应一定程度的加班；6、有项目管理经验、互联网应用开发经验优先。<br/>工作时间：​8：40-17：30，周末双休</div>         </div>          <div class="posit_arrow_bot"></div>        </div>        	                        	</div>  </div>    <div class="job_btn_con">  	  </div> 	  </section><section class="poster_wrap praise">  <div class="poster_praise_con">    <div class="poster_praise_logo"><img src="http://img.58cdn.com.cn/ds/qiye/m/wzp_logo.png"></div>  </div>  <p class="praise_tip">已有<b>6</b>人觉得这家公司值得加入</p>  <a class="praise_btn " href="javascript:;">    <i><em></em></i><span>点赞，值得加入</span>  </a>  	<a class="praise_share_btn" href="javascript:;">分享给好友</a>  	</section><section class="poster_wrap search">  <div class="search_head">    <div class="search_logo"><img src="http://img.58cdn.com.cn/ds/qiye/m/wzp_search_logo.png?1"></div>    <div class="search_posit">      <div class="search_input_con">        <input type="text" placeholder="搜索我感兴趣的企业" value="" class="search_input">      </div>      <a class="search_btn" href="javascript:;"><i></i></a>    </div>    <div class="search_result_con">      <ul>        </ul>    </div>  </div>  <div class="search_footer">    <a class="search_footer_btn" href="http://c.58cdn.com.cn/ds/qiye/m/guide.html">创建我的微招聘</a>    <p class="search_footer_tip">58同城提供以上服务</p>  </div>  <div class="search_con"></div></section>';
+
+	$(".load").addClass("remove");
+		
+		$("#poster_contain").append(data);
+		
+		setTimeout(function(){
+			$(".load").remove();
+			
+			if(agent.indexOf('iphone') > -1 && 
+					(agent.indexOf('ucbrowser') > -1 || agent.indexOf('mqqbrowser') > -1)){
+				$(".arrow_top, .job_btn_con").css({bottom:"50px"});
+			}
+			
+			$("#poster_contain").swipeUp({
+				childrenClass:".poster_wrap",
+				init:function(){
+					$(".arrow_top").show();
+					$($("#poster_contain .poster_wrap").get(0)).addClass("focus");
+				},
+				afterSwipe:function(index){
+					var _pw = $("#poster_contain .poster_wrap");
+					_pw.removeClass("focus");
+					$(_pw.get(index)).addClass("focus");
+					if(index == _pw.length-1){
+						$(".arrow_top").hide();
+					}else{
+						$(".arrow_top").show();
+					}
+					var rewardHomeCon=$('.reward_home_con'),
+					rewardHomeConLength=rewardHomeCon.length; 
+					if(rewardHomeConLength>0){
+						if(rewardHomeCon.hasClass("homt_active")){
+							rewardHomeCon.removeClass("homt_active");
+						}
+						var rewardPlus=$('.reward_plus');
+						if(rewardPlus.hasClass("plus_animate")){
+							rewardPlus.removeClass("plus_animate");
+						}
+					}
+				}
+			});
+			
+			$(".praise_btn").on("click", function(){
+				if($(this).hasClass("on"))return;
+				var _this = $(this);
+				$.getJSON("/enter/zan/" + userid + "?zanid=" + zanid, function(data){
+					if(data.ret == "succ"){
+						$(".praise_btn span").html('谢谢你！');
+						$(".praise_tip b").html(data.zan);
+						_this.addClass("on");
+					}
+				});
+			});
+			
+			$(".praise_share_btn").on("click", function(){
+				share();
+				weizhan_clickLog('page=weihaibao&tag=share&keyid='+zanid+'&userid='+userid);
+			});
+			
+			$(".job_btn_list .tel").on("click", function(){
+				weizhan_clickLog('page=weihaibao&tag=phone&keyid='+zanid+'&userid='+userid);
+			});
+			
+			$(".search_input").on("focus", search.focus).on("keyup", search.keyup).on("blur", search.keyup);
+			
+			(function(){
+				var _width = winWidth;
+				
+				if(agent.indexOf('android') > -1 && agent.indexOf('micromessenger') > -1){
+			        if(window.devicePixelRatio > 1){
+			            if(agent.indexOf('miuibrowser') > -1){
+			            	_width = winWidth;
+			            }else{
+			            	_width = window.screen.width/window.devicePixelRatio;
+			            }
+			        }
+			    }
+				
+				_width = _width-30*2;
+				$(".posit_details").css({width:_width+"px"})
+				
+				var _ulWidth = $(".posit_details").length * (_width+15) + 15;
+				
+				$(".posit_list_ul").css({width:_ulWidth+"px"});
+				
+				$(".posit_list_ul").swipe({
+					width:_width + 15,
+					afterSwipe:function(index){
+						var _job = $($(".posit_details").get(index));
+						if(typeof weizhan!== 'undefined' && typeof weizhan.reward!== 'undefined' && typeof(eval(weizhan.reward.setRewardJobBtn)) == "function"){
+							weizhan.reward.setRewardJobBtn(_job);
+					    }else{
+					    	$(".job_btn_list > .add").attr("href", _job.attr("url"));
+							$(".job_btn_list > .tel").attr("href", "tel:"+_job.attr("tel"));
+					    }
+					}
+				});
+			})();
+			if(typeof weizhan!== 'undefined' && typeof weizhan.reward!== 'undefined' && typeof(eval(weizhan.reward.init)) == "function"){
+				window.weizhan.reward.init();
+		    }
+			
+		}, 500)
+	
+});
+
+var search = {
+	focus : function(e){
+		swipeUpFlag = false;
+		$(".search_logo").hide();
+		$(".search_result_con").show();
+		$(".search_posit").addClass("on");
+		$(".search_con").css({"-webkit-transform":"translate3d(0,0,0)"});
+		$(".search_btn").html('取消').on("click", search.cancel);
+		$(".search_input").get(0).focus();
+		window.scrollTo(0,0);
+	},
+	cancel: function(e){
+		swipeUpFlag = true;
+		$(".search_logo").show();
+		$(".search_result_con").hide();
+		$(".search_posit").removeClass("on");
+		$(".search_con").css({"-webkit-transform":"translate3d(0,-50%,0)"});
+		$(".search_btn").html('<i></i>').off("click");
+	},
+	keyup : function(e){
+		if(typeof(searchT) != "undefined")clearTimeout(searchT);
+		searchT = setTimeout(function(){
+			var _val = $(".search_input").val().replace(/\s/,'');
+			if(_val == ""){
+				$(".search_result_con > ul").html("");
+				return;
+			}
+			$.jsonP({url:"http://suggest.58.com.cn/searchsuggest_weizhaopin.do?callback=search.result&productline=1002&inputbox="+ _val +"&num=10&_=1420360467220"});
+		}, 800);
+	},
+	result: function(data){
+		var _con = $(".search_result_con > ul").html("");
+		if(data.length > 0){
+			$.each(data, function(i, d){
+				if(i > 9)return false;
+				_con.append('<li><a href="http://w.58.com/waitload/'+ d.u +'/1002?source=zhuzhan&version=v1">'+ d.k +'</a></li>');
+			});
+		}else{
+			_con.append('<li class="none"><a href="javascript:;">没有找到相应的企业</a></li>');
+		}
+	}
+}
+
+var isSwipeX = null;
+(function($){
+	$.fn.swipe = function (options) {
+		var _data = this.data("data");
+		if(_data != null){
+			if(_data.index != options.index){
+				this.css({"-webkit-transform": "translate3d("+ (options.index*-1*_data.width) +"px,0,0)"});
+			}
+			this.data("data", $.extend({}, _data, options));
+			_data = this.data("data");
+			return;
+		}
+		
+    	var defaults = {
+			index:0
+    	};
+    	var opts = $.extend({}, defaults, options);
+    	this.data("data", opts);
+    	this.each(function(){
+			var that = $(this);
+    		var _this = $(this)[0];
+    		var _width = opts.width || parseInt($(this).children().css("width"));
+    		var sx = 0, sy = 0, mx = 0, my = 0;
+			
+			that.css({
+					"-webkit-transition-duration":"300ms",
+					"-webkit-transition-style":"preserve-3d",
+					"-webkit-transition-timing-function":"linear",
+					"-webkit-transform": "translate3d("+ (opts.index*-1*opts.width) +"px,0,0)"
+				});
+			
+    		_this.addEventListener("touchstart", function (e) {
+    			opts = that.data("data");
+    			sx = e.touches[0].pageX, sy = e.touches[0].pageY, mx = 0, my = 0;;
+				that.css({"-webkit-transition-duration":"0ms"});
+    		}, false);
+    		
+    		_this.addEventListener("touchmove", function (e) {
+    			mx = e.touches[0].pageX - sx, my = e.touches[0].pageY - sy;
+				
+				if(isSwipeX == null){
+					isSwipeX = Math.abs(mx) > Math.abs(my);
+				}
+				
+				if(isSwipeX){
+					e.preventDefault();
+					that.css({"-webkit-transform": "translate3d("+ (opts.index*-1*opts.width + mx) +"px,0,0)"});
+    			}
+    		}, false);
+    		
+    		_this.addEventListener("touchend", function (e) {
+    		    if(isSwipeX){
+					if(Math.abs(mx) > 45){
+						var _n = that.children(".posit_details").length;
+						if(mx < 0){
+							if(opts.index < _n-1)opts.index++;
+						}else{
+							if(opts.index > 0)opts.index--;
+						}
+					}
+					
+					that.css({
+						"-webkit-transition-duration":"200ms",
+						"-webkit-transform": "translate3d("+ (opts.index*-1*opts.width) +"px,0,0)"
+					});
+					
+					if(opts.afterSwipe){
+						opts.afterSwipe(opts.index);
+					}
+				}
+				
+				isSwipeX = null;
+    		}, false);
+    	});
+    	
+    	return this;
+    };
+    $.fn.swipeUp = function (options) {
+    	var _data = this.data("data");
+		if(_data != null){
+			if(_data.index != options.index){
+				var _c = this.children(_data.childrenClass);
+				_c.css({"zIndex": "18", "display":"none"});
+				$(_c.get(options.index)).css({"zIndex": "20", "display":"block"});
+			}
+			this.data("data", $.extend({}, _data, options));
+			_data = this.data("data");
+			return;
+		}
+    	
+        var defaults = {
+        	index:0,
+        	speed:300,
+			childrenClass:".slide-child"
+        };
+        var opts = $.extend({}, defaults, options);
+        this.data("data", opts);
+        return this.each(function(){
+        	var that = $(this);
+        	var w = parseInt(that.css("width"));
+        	var h = parseInt(that.css("height"));
+        	var o = 0,c = "white";
+        	
+        	//初始化
+        	var childrenObj = that.children(opts.childrenClass);
+        	if(opts.index >= childrenObj.length){
+        		alert("index value is too big.");
+        	}
+        	
+        	var currObj, prevObj, nextObj;
+        	var freshObj = function(){
+        		childrenObj.css({"-webkit-transform": "translate3d(0,0,0)", "-webkit-transition-duration":"0ms", opacity:1,display:"none"});
+        		
+        		currObj = prevObj = nextObj = null;
+        		currObj = $(childrenObj[opts.index]).show().css({"zIndex": "20"});
+            	if(opts.index > 0){
+            		prevObj = $(childrenObj[opts.index-1]);
+            	}
+            	if(opts.index < childrenObj.length-1){
+            		nextObj = $(childrenObj[opts.index+1]);
+            	}
+        	};
+        	freshObj();
+        	
+        	var startY = 0, moveY = 0, endY = 0;
+        	swipeUpFlag = true;
+        	this.addEventListener("touchstart", function(e){
+        		if(!swipeUpFlag)return;
+        		opts = that.data("data");
+        		freshObj();
+        		if(opts.beforeSwipe){
+					opts.beforeSwipe(opts.index);
+				}
+        		startY = e.touches[0].pageY,endY=0;
+        		c = currObj.css("backgroundColor")
+				childrenObj.css({"-webkit-transition-duration":"0ms"});
+        	});
+        	
+        	this.addEventListener("touchmove", function(e){
+        		if(!swipeUpFlag || (isSwipeX!=null&&isSwipeX!=false))return;
+        		e.preventDefault();
+        		moveY = e.touches[0].pageY;
+        		
+        		endY = moveY - startY;
+				
+        		o = Math.abs(endY)/h;
+        		
+        		var e = false;
+				if(prevObj){
+					if(endY > 0){
+						prevObj.css({"zIndex":18,display:"block", opacity:(0.5+o)});
+					}else{
+						prevObj.hide();
+					}
+				}else if(endY > 0){
+					e = true;
+				}
+				if(nextObj){
+					if(endY < 0){
+						nextObj.css({"zIndex":18,display:"block", opacity:(0.5+o)});
+					}else{
+						nextObj.hide();
+					}
+				}else if(endY < 0){
+					e = true;
+				}
+				
+				if(e){
+					o = 0;
+					endY = endY/2;
+					$("body").css("backgroundColor",c);
+				}else{
+					$("body").css("backgroundColor","white");
+				}
+				
+        		currObj.css({"-webkit-transform": "translate3d(0,"+ endY +"px,0)", opacity:(1-o/2)});
+        	});
+        	
+			this.addEventListener("touchend", function(e){
+				if(!swipeUpFlag || (isSwipeX!=null&&isSwipeX!=false))return;
+				
+				childrenObj.css({"-webkit-transition-duration":opts.speed + "ms"});
+				
+				if(Math.abs(endY) < h/8){
+					currObj.css({"-webkit-transform": "translate3d(0,0,0)", opacity:1});
+				}else{
+					var _my = 0;
+					if(endY < 0 && nextObj){
+						nextObj.css({opacity:1});
+						opts.index++;
+						_my = -1*h;
+					}else if(endY > 0 && prevObj){
+						prevObj.css({opacity:1});
+						opts.index--;
+						_my = h;
+					}else{
+						_my = 0;
+					}
+					endY = 0;
+					swipeUpFlag = false;
+					
+					currObj.css({"-webkit-transform": "translate3d(0,"+ _my +"px,0)", opacity:(_my==0?1:0), "zIndex":20});
+					setTimeout(function(){
+						freshObj();
+						swipeUpFlag = true;
+						if(opts.afterSwipe){
+							opts.afterSwipe(opts.index);
+						}
+					}, opts.speed);
+				}
+        	});
+			
+			if(opts.init){
+				opts.init();
+			}
+        });
+        
+        return this;
+    };
+})(jq);
+</script>
+<script>function googleAnalytices(path , referer , param , async){var _rootDomain = 'http://m.58.com';
+var url = "http://m.58.com/ga/url/?path="+path+"&referer=" +  (typeof(referer) == 'undefined' ? "" : referer) + (typeof(param) == 'undefined' ? "" :    
+param)+"&callback=?";
+var tempasync = true;
+if(async == false)tempasync = async ;
+$.ajax({
+type:"JSONP", url: url , async : tempasync , 
+success:function(data){
+var tempurl = _rootDomain+data.url ;
+var image = document.createElement("img") ;
+image.src = tempurl ;
+image.className = "googleanalyze" ;
+document.body.appendChild(image) ;},
+timeout : 30000, error:function(msg){}
+});
+}
+googleAnalytices('chunjieyunying', document.referer);
+</script>
+<script type="text/javascript">
+var _trackURL = "{'cate':'','area':'','pagetype':'wei_zp','page':"+zanid+",'GA_pageview':'/m/wei_zp/"+zanid+"/'}";
+</script> 
+<script src="http://tracklog.58.com/referrer_m.js"></script>
