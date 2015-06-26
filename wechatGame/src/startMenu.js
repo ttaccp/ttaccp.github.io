@@ -86,6 +86,21 @@ var StartMenu = cc.Layer.extend({
         go.setVisible(false);
         explainbox.addChild(go, 0, 'go');
         
+        cc.eventManager.addListener({
+            event: cc.EventListener.TOUCH_ONE_BY_ONE,//单击
+            swallowTouches: true,
+            onTouchBegan: function(touch, event) {
+                var target = event.getCurrentTarget();
+                var locationInNode = target.convertToNodeSpace(touch.getLocation());
+                var s = target.getContentSize();
+                var rect = cc.rect(0, 0, s.width, s.height);
+                if (cc.rectContainsPoint(rect, locationInNode)) {
+                	cc.director.runScene(new MainScene());
+                }
+                return true;
+            }
+        }, go);
+        
         // 显示说明
         self.delayExec(self.showExplain);
         // 手指提示

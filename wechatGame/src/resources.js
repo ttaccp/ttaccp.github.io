@@ -9,7 +9,8 @@ var res = {
 	bg_fuzzy: getImgByPhone('bg_fuzzy'),
 	explain: 'res/img/explain.png',
 	playexplain: 'res/img/playexplain.png',
-	go: 'res/img/go.png'
+	go: 'res/img/go.png',
+	number: 'res/img/number.png'
 };
 
 var G_StartRes = [
@@ -17,7 +18,8 @@ var G_StartRes = [
 	res.bg_fuzzy,
 	res.explain,
 	res.playexplain,
-	res.go
+	res.go,
+	res.number
 ];
 
 function getImgByPhone(key){
