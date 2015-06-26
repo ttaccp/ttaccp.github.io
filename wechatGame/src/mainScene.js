@@ -27,7 +27,7 @@ var MainScene = cc.Layer.extend({
         container.addChild(bg, 0, 'bg');
         
         // ready
-        var ready = self.ready = new cc.Sprite(res.ready, cc.rect(0, 0, 620, 130));
+        var ready = self.ready = new cc.Sprite(res.ready, cc.rect(0, 0, 630, 140));
         ready.attr({
         	anchorX: 0,
         	anchorY: 0,
@@ -63,14 +63,18 @@ var MainScene = cc.Layer.extend({
     		Utils.show(self.numbers['num1']);
     		Utils.hide(self.numbers['num2']);
     	}, 2000);
+    	
+    	Utils.delayExec(function(){
+    		Utils.hide(self.numbers['num1']);
+    	}, 3000);
     },
     renderNumber: function(size, container){
     	
     	var rel = {};
     	var rects = [
-    		cc.rect(17, 168, 276, 324),
-    		cc.rect(318, 168, 276, 324),
-    		cc.rect(601, 168, 276, 324)
+    		cc.rect(0, 149, 360, 378),
+    		cc.rect(360, 149, 360, 378),
+    		cc.rect(717, 149, 320, 378)
     	]
     	for (var i = 3, j = 0; i >= 1; i--, j++) {
     		var num = new cc.Sprite(res.ready, rects[j]);
