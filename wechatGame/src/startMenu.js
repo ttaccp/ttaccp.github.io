@@ -86,6 +86,7 @@ var StartMenu = cc.Layer.extend({
         go.setVisible(false);
         explainbox.addChild(go, 0, 'go');
         
+        // 添加事件
         cc.eventManager.addListener({
             event: cc.EventListener.TOUCH_ONE_BY_ONE,//单击
             swallowTouches: true,
