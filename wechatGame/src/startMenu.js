@@ -103,39 +103,24 @@ var StartMenu = cc.Layer.extend({
         }, go);
         
         // 显示说明
-        self.delayExec(self.showExplain);
+        Utils.delayExec(self.showExplain.bind(self), GC.time_showExplain);
         // 手指提示
-        self.delayExec(self.showPlayexplain, 3000);
+        Utils.delayExec(self.showPlayexplain.bind(self), GC.time_showExplain + GC.time_showExplain);
         // 显示GO
-        self.delayExec(self.showGo, 6000);
+        Utils.delayExec(self.showGo.bind(self), GC.time_showExplain + GC.time_showExplain + GC.time_showGo);
         
         return true;
     },
     showExplain: function(){
-        this.show(this.bg_fuzzy);
-        this.show(this.explain);
+        Utils.show(this.bg_fuzzy);
+        Utils.show(this.explain);
     },
     showPlayexplain: function(){
-    	this.show(this.playexplain);
+    	Utils.show(this.playexplain);
     },
     showGo: function(){
-        this.show(this.go);
-        this.hide(this.playexplain);
-    },
-    delayExec: function(fn, time){
-    	setTimeout(fn.bind(this), time || 1500);
-    },
-    show: function(node, time){
-    	node.setVisible(true);
-    	var fadeto = new cc.FadeTo(time || 0.5, 255);
-        node.runAction(fadeto);
-    },
-    hide: function(node, time){
-    	var fadeto = new cc.FadeTo(time || 0.5, 0);
-        node.runAction(fadeto);
-        setTimeout(function(){
-        	node.setVisible(false);
-        }, time || 0.5);
+        Utils.show(this.go);
+        Utils.hide(this.playexplain);
     }
 });
 

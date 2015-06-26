@@ -16,15 +16,37 @@ var MainScene = cc.Layer.extend({
         container.setPosition(visibleRect.bottomLeft);
         self.addChild(container);
         
-        var author = new cc.LabelTTF('开始', 'Arial', 30);
-    	author.attr({
-    		anchorX: 0,
-    		anchorY: 0,
-    		x: size.width / 2 - author.width / 2,
-    		y: size.height / 2 - author.height / 2
-    	});
-    	container.addChild(author, 10);
+        // 背景图
+        var bg = self.bg = new cc.Sprite(res.bg);
+        bg.attr({
+        	anchorX: 0,
+        	anchorY: 0,
+        	x: 0,
+        	y: 0
+        });
+        container.addChild(bg, 0, 'bg');
+        
+        // ready
+        var ready = self.ready = new cc.Sprite(res.ready, cc.rect(0, 0, 620, 130));
+        ready.attr({
+        	anchorX: 0,
+        	anchorY: 0,
+        	x: size.width / 2 - ready.width / 2,
+        	y: size.height / 2 - ready.height / 4
+        });
+        ready.setVisible(false);
+        container.addChild(ready, 0, 'ready');
+        
+        
+        
+        
+        // 显示ready
+        Utils.delayExec(self.showReady.bind(self), GC.time_showReady);
+        
         return true;
+    },
+    showReady: function(){
+    	Utils.show(this.ready);
     }
 });
 

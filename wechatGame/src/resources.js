@@ -10,7 +10,8 @@ var res = {
 	explain: 'res/img/explain.png',
 	playexplain: 'res/img/playexplain.png',
 	go: 'res/img/go.png',
-	number: 'res/img/number.png'
+	number: 'res/img/number.png',
+	ready: 'res/img/ready.png'
 };
 
 var G_StartRes = [
@@ -19,7 +20,8 @@ var G_StartRes = [
 	res.explain,
 	res.playexplain,
 	res.go,
-	res.number
+	res.number,
+	res.ready
 ];
 
 function getImgByPhone(key){
