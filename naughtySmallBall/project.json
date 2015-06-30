@@ -1,0 +1,10 @@
+{
+    "debugMode"     : 1,
+    "showFPS" : false,
+    "frameRate"     : 60,
+    "id"            : "gameCanvas",
+    "renderMode"    : 1,
+    "jsList"        : [
+        "src/startMenu.js"
+    ]
+}
