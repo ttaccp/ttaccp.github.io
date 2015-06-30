@@ -19,7 +19,7 @@ var StartMenu = cc.Layer.extend({
 		this.addChild(dot);
 		dot.setPosition(center);
 		
-		var speed = 20;
+		var speed = 30;
 		
 		this.schedule(function(f){
 			
