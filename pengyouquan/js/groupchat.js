@@ -50,10 +50,14 @@ $('#chatlist [name="card"]').live('click',function(){
 });
 
 function showchat(id, callback){
+	
 	setTimeout(function(){
+		var send_music = new Audio();
+		send_music.src = '../audio/send.mp3';
+		send_music.play();
 		$(id).addClass('show');
 		if(callback){
-			setTimeout(callback, 500);
+			setTimeout(callback, 1500);
 		}
 	}, 50);
 	
@@ -74,7 +78,7 @@ chatDataList.push({
 	name: 'c同学',
 	cardHead: '../img/head6.png',
 	cardName: 'Terrence',
-	cardNickName: 'Terrence'
+	cardNickName: '风险管理部门合伙人'
 });
 chatDataList.push({
 	type: 'card',
@@ -82,7 +86,7 @@ chatDataList.push({
 	name: 'c同学',
 	cardHead: '../img/head1.png',
 	cardName: '梁捷',
-	cardNickName: '梁捷'
+	cardNickName: '税务部门合伙人'
 });
 chatDataList.push({
 	type: 'card',
@@ -90,7 +94,7 @@ chatDataList.push({
 	name: 'c同学',
 	cardHead: '../img/head3.png',
 	cardName: 'Pascal',
-	cardNickName: 'Pascal'
+	cardNickName: '企业管理咨询合伙人'
 });
 chatDataList.push({
 	type: 'card',
@@ -98,7 +102,7 @@ chatDataList.push({
 	name: 'c同学',
 	cardHead: '../img/head11.png',
 	cardName: 'Jaimie',
-	cardNickName: 'Jaimie'
+	cardNickName: '财务咨询服务部门总监'
 });
 chatDataList.push({
 	type: 'card',
@@ -106,7 +110,7 @@ chatDataList.push({
 	name: 'c同学',
 	cardHead: '../img/head2.png',
 	cardName: '潘清',
-	cardNickName: '潘清'
+	cardNickName: '德勤审计合伙人'
 });
 var addchatIndex = 0;
 function addchat(){
@@ -129,7 +133,7 @@ function addchat(){
 						'<div class="tl">名片</div>',
 						'<img src="', data.cardHead,'" class="c_head" />',
 						'<div class="c_name">', data.cardName,'</div>',
-						'<div class="c_nick">昵称：', data.cardNickName,'</div>',
+						'<div class="c_nick">', data.cardNickName,'</div>',
 					,'</div>',
 				'</div>'].join(''));
 		}

@@ -1,11 +1,21 @@
+var lock_music = new Audio();
+lock_music.src = '../audio/lock.mp3';
+
+
 var Msg = (function(window, $){
 	
 	var count = 0;
 	var fn_addDom = function(){
+				
 		$('#msglist').append(['<div class="msg">',
 								'<img src="../img/msg1.png" class="img" />',
 							'</div>'].join(''));
 		setTimeout(function(){
+			
+			var lock_music = new Audio();
+			lock_music.src = '../audio/lock.mp3';
+			lock_music.play();
+			
 			$('#msglist .msg:last').addClass('show');
 			count++
 			

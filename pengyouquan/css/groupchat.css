@@ -32,12 +32,13 @@ html, body{
 .step3 .chatlist .msgline{
 	position: relative;
 	padding: 0.1rem;
-	padding-left: 0.74rem;
+	padding-left: 0.64rem;
     filter: alpha(opacity=0);
     -moz-opacity: 0;
     opacity: 0;
     -webkit-transition: all 1.2s;
     transition: all 1.2s;
+    margin-bottom: 0.15rem;
 }
 .step3 .chatlist .msgline.show{
 	filter: alpha(opacity=1);
@@ -45,11 +46,11 @@ html, body{
     opacity: 1;
 }
 .step3 .chatlist .msgline.me{
-	padding-right: 0.75rem;
+	padding-right: 0.65rem;
 }
 .step3 .chatlist .msgline .head{
-	width: 0.5rem;
-	height: 0.5rem;
+	width: 0.4rem;
+	height: 0.4rem;
 	position: absolute;
 	left: 0.1rem;
 	top: 0.1rem;
@@ -74,7 +75,6 @@ html, body{
 	position: relative;
 	word-break: break-all;
 	word-wrap: break-word;
-	overflow: hidden;
 }
 .step3 .chatlist .msgline.me .msgcontent{
 	margin-right: 0;

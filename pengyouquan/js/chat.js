@@ -112,10 +112,14 @@ chatDataList2.push([
 ]);
 
 function showchat2(id, callback){
+	
 	setTimeout(function(){
+		var send_music = new Audio();
+		send_music.src = '../audio/send.mp3';
+		send_music.play();
 		$(id).addClass('show');
 		if(callback){
-			setTimeout(callback, 500);
+			setTimeout(callback, 1500);
 		}
 	}, 50);
 	
@@ -160,6 +164,6 @@ function addchat2(){
 			$("#step6")
 				.fadeIn(1000)
 				.load('chatlist.html');
-		}, 2000);
+		}, 5000);
 	}
 }
