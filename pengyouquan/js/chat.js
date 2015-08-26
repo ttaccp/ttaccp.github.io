@@ -119,7 +119,7 @@ function showchat2(id, callback){
 		send_music.play();
 		$(id).addClass('show');
 		if(callback){
-			setTimeout(callback, 1500);
+			setTimeout(callback, 3000);
 		}
 	}, 50);
 	
@@ -164,6 +164,6 @@ function addchat2(){
 			$("#step6")
 				.fadeIn(1000)
 				.load('chatlist.html');
-		}, 5000);
+		}, 6000);
 	}
 }
