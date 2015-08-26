@@ -49,7 +49,7 @@ $('#chatlist [name="card"]').live('click',function(){
 		.load('persondetails.html');
 });
 
-function showchat(id, callback){
+function showchat(id, callback, num){
 	
 	setTimeout(function(){
 		var send_music = new Audio();
@@ -57,7 +57,7 @@ function showchat(id, callback){
 		send_music.play();
 		$(id).addClass('show');
 		if(callback){
-			setTimeout(callback, 3000);
+			setTimeout(callback, num || 3000);
 		}
 	}, 50);
 	
@@ -124,6 +124,7 @@ function addchat(){
 					'<div class="name">', data.name,'</div>',
 					'<div class="msgcontent">', data.content,'</div>',
 				'</div>'].join(''));
+			showchat('#chatlist .msgline:last-child', addchat);
 		} else if(data.type == 'card'){
 			$('#chatlist')
 				.append(['<div class="msgline">',
@@ -136,9 +137,10 @@ function addchat(){
 						'<div class="c_nick">', data.cardNickName,'</div>',
 					,'</div>',
 				'</div>'].join(''));
+			showchat('#chatlist .msgline:last-child', addchat, 1500);
 		}
 		
 		addchatIndex++
-		showchat('#chatlist .msgline:last-child', addchat);
+		
 	}
 }

@@ -282,8 +282,13 @@ body{
 	display: block;
 	margin: 0.05rem 0.1rem 0 0;
 }
-.clickTip{
+.clickTip1{
     position: absolute;
     right: 0.3rem;
     top: 6.56rem;
+}
+.clickTip2{
+	position: absolute;
+    right: 0.3rem;
+    top: 42.2rem;
 }
