@@ -1,5 +1,6 @@
 .step5 {
 	color: #000;
+	overflow: hidden;
 }
 .step5 .tip{
 	padding: 0.05rem 0;
@@ -19,7 +20,7 @@
 	z-index: 1;
 }
 .step5 .chatlist{
-	padding-bottom: 0.6rem;
+	padding-bottom: 0.4rem;
 	margin-top: 0.1rem;
 }
 .step5 .chatlist .msgline{

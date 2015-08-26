@@ -47,6 +47,7 @@ html, body{
 }
 .step3 .chatlist .msgline.me{
 	padding-right: 0.65rem;
+	padding-left: 0.4rem;
 }
 .step3 .chatlist .msgline .head{
 	width: 0.4rem;
