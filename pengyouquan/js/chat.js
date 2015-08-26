@@ -164,6 +164,6 @@ function addchat2(){
 			$("#step6")
 				.fadeIn(1000)
 				.load('chatlist.html');
-		}, 6000);
+		}, 3000);
 	}
 }
