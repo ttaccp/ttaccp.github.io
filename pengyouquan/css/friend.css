@@ -1,0 +1,222 @@
+body{
+	padding-bottom: 0.3rem;
+	height: initial;
+}
+.head-box{
+	position: relative;
+}
+.head-box .bg-box{
+	height: 2.2rem;
+	overflow: hidden;
+}
+.head-box .bg-box .img{
+	width: 100%;
+	margin-top: -0.4rem;
+}
+.head-box .user-info{
+	position: absolute;
+	right: 0.1rem;
+	bottom: -0.5rem;
+	text-align: center;
+}
+.head-box .user-info .head{
+	width: 0.8rem;
+	height: 0.8rem;
+	border: 0.03rem solid #fff;
+}
+.head-box .user-info .name{
+	font-size: 0.14rem;
+	text-align: center;
+	margin-top: 0.05rem;
+	color: #404040;
+}
+.msg-list{
+	margin-top: 0.8rem;
+}
+.msg-list .msg-line{
+	position: relative;
+	padding: 0.1rem;
+	padding-left: 0.7rem;
+	padding-bottom: 0.2rem;
+	margin-bottom: 0.1rem;
+}
+.msg-list .msg-line:before{
+	content: '';
+	width: 200%;
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+	-webkit-transform-origin: 0;
+	transform-origin: 0;
+	border-bottom: 1px solid #dcdcdc;
+}
+.msg-list .msg-line .head{
+	width: 0.5rem;
+	height: 0.5rem;
+	position: absolute;
+	left: 0.1rem;
+	top: 0.1rem;
+}
+.msg-list .msg-line .name{
+	color: #646e8c;
+	font-weight: bold;
+}
+.msg-list .msg-line .content{
+	margin-top: 0.08rem;
+	word-break: break-all;
+	word-wrap: break-word;
+	line-height: 0.18rem;
+}
+.msg-list .msg-line .img-list{
+	overflow: hidden;
+	margin-top: 0.1rem;
+}
+.msg-list .msg-line .img-list.one .img{
+	width: 1.1rem;
+    height: 1.1rem;
+}
+.msg-list .msg-line .img-list .img{
+	margin: 0 0.05rem 0.05rem 0;
+	width: 0.75rem;
+	height: 0.75rem;
+	float: left;
+}
+.msg-list .msg-line .time-box{
+	margin-top: 0.05rem;
+	position: relative;
+}
+.msg-list .msg-line .time-box .menu-box{
+    position: absolute;
+    right: 0.4rem;
+    top: -0.08rem;
+    width: 2rem;
+    overflow: hidden;
+}
+.msg-list .msg-line .time-box .menu-box .menu{
+	overflow: hidden;
+	padding: 0.04rem 0;
+	background-color: #4c5154;
+	border-radius: 0.05rem;
+	color: #fff;
+	font-size: 0.12rem;
+	float: right;
+    margin-right: -100%;
+    -webkit-transition: all 0.2s;
+    transition: all 0.35s;
+}
+.msg-list .msg-line .time-box .menu-box .menu.show{
+	margin-right: 0;
+}
+.msg-list .msg-line .time-box .menu-box .menu .praise,
+.msg-list .msg-line .time-box .menu-box .menu .comment{
+	float: left;
+	width: 0.5rem;
+	text-align: center;
+	background: url(../img/icon1.png) no-repeat 0.1rem center;
+	background-size: 0.8rem 0.16rem;
+	padding: 0.05rem 0;
+	padding-left: 0.15rem;
+}
+.msg-list .msg-line .time-box .menu-box .menu .praise{
+	border-right: 1px solid #434343;
+}
+.msg-list .msg-line .time-box .menu-box .menu .comment{
+	background-position: -0.57rem 0.04rem;
+}
+.msg-list .msg-line .time-box .time{
+	color: #999;
+	font-size: 0.13rem;
+}
+.msg-list .msg-line .time-box .more-btn{
+	-webkit-appearance: none;
+	background: url(../img/morebtn.png) no-repeat;
+	background-size: 0.21rem 0.13rem;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border: 0.1rem solid #fff;
+	position: absolute;
+	right: -0.05rem;
+	top: -0.1rem;
+	width: 0.21rem;
+	height: 0.13rem;
+}
+.msg-list .msg-line .comment-praise-box{
+	background-color: #f3f3f5;
+	margin-top: 0.1rem;
+	position: relative;
+	font-size: 0.13rem;
+}
+.msg-list .msg-line .comment-praise-box:before{
+	content: '';
+	display: block;
+	width: 0.1rem;
+	height: 0.1rem;
+	background-color: #f3f3f5;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	left: 0.2rem;
+	top: -0.05rem;
+}
+.msg-list .msg-line .comment-praise-box .praise-box{
+	color: #7e8cb0; 
+	padding: 0.05rem;
+	padding-left: 0.22rem;
+	background: url(../img/praise.png) no-repeat 0.05rem 0.07rem;
+	background-size: 0.13rem 0.11rem;
+	position: relative;
+}
+.msg-list .msg-line .comment-praise-box .praise-box:before{
+	content: '';
+	width: 200%;
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+	-webkit-transform-origin: 0;
+	transform-origin: 0;
+	border-bottom: 1px solid #dcdcdc;
+}
+.msg-list .msg-line .comment-praise-box .comment-box{
+	padding: 0 0.05rem 0.05rem;
+}
+.msg-list .msg-line .comment-praise-box .comment-box .comment-line{
+	word-break: break-all;
+	word-wrap: break-word;
+	margin-top: 0.05rem;
+}
+.msg-list .msg-line .comment-praise-box .comment-box .comment-line .s{
+	color: #7e8cb0;
+}
+.msg-list .msg-line .comment-praise-box .comment-box .comment-line .txt{
+    border: 0;
+    outline: none;
+    background-color: #f3f3f5;
+    width: 100%;
+}
+.msg-list .msg-line .comment-praise-box .comment-box .comment-line span.txt{
+	width: initial;
+}
+.tip-txt{
+	color: #666;
+	padding: 0 0.2rem;
+	font-size: 0.13rem;
+}
+.share-btn{
+	-webkit-appearance: none;
+	width: 2rem;
+	padding: 0.1rem 0;
+	color: #fff;
+	border: 0;
+	-webkit-border-radius: 0.05rem;
+	border-radius: 0.05rem;
+	background-color: #09bb07;
+	font-size: 0.14rem;
+	display: block;
+	margin: 0.2rem auto 0;
+}

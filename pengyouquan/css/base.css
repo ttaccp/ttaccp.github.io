@@ -1,0 +1,74 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: arial, "microsoft yahei";
+	color: #000;
+	-webkit-user-select:none;
+	user-select:none;
+	height: 100%;
+}
+html {
+	font-size: 100px;
+}
+body {
+	font-size: 0.14rem;
+}
+@media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+	html {
+		font-size: 117.1875px;
+	}
+}
+@media (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+	html {
+		font-size: 129.375px;
+	}
+}
+
+/* 点击提示 */
+.clickTip{
+	position: fixed;
+	z-index: 10;
+}
+.clickTip .effect1,
+.clickTip .effect2,
+.clickTip .effect3{
+	width: 0.1rem;
+	height: 0.1rem;
+	border-radius: 50%;
+	background-color: #fff;
+	-webkit-animation: _clickTip 3s linear infinite;
+    animation: _clickTip 3s linear infinite;
+	background: transparent;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.clickTip .effect2{
+	-webkit-animation: _clickTip 3s linear infinite 1s;
+    animation: _clickTip 3s linear infinite 1s;
+}
+.clickTip .effect3{
+	-webkit-animation: _clickTip 3s linear infinite 2s;
+    animation: _clickTip 3s linear infinite 2s;
+}
+@-webkit-keyframes _clickTip{
+	0%{
+		box-shadow: 0 0 0 0.1rem rgba(54, 54, 54, 0.7);
+    	background: rgba(54, 54, 54, 0.9);
+	}
+	100%{
+		box-shadow: 0 0 0 0.4rem rgba(54, 54, 54, 0);
+	    background: rgba(54, 54, 54, 0);
+	}
+}
+@keyframes _clickTip{
+	0%{
+		box-shadow: 0 0 0 0.1rem rgba(54, 54, 54, 0.7);
+    	background: rgba(54, 54, 54, 0.9);
+	}
+	100%{
+		box-shadow: 0 0 0 0.4rem rgba(54, 54, 54, 0);
+	    background: rgba(54, 54, 54, 0);
+	}
+}

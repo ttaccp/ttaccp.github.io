@@ -1,0 +1,119 @@
+.step5 {
+	color: #000;
+}
+.step5 .tip{
+	padding: 0.05rem 0;
+	text-align: center;
+	color: #fff;
+	background-color: #cfcfcf;
+	border-radius: 0.05rem;
+	font-size: 0.14rem;
+    margin: 0.1rem 0.1rem 0;
+}
+.step5 .input{
+	width: 100%;
+	display: block;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+}
+.step5 .chatlist{
+	padding-bottom: 0.6rem;
+	margin-top: 0.1rem;
+}
+.step5 .chatlist .msgline{
+	position: relative;
+	padding: 0.1rem;
+	padding-left: 0.74rem;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-transition: all 1.2s;
+    transition: all 1.2s;
+}
+.step5 .chatlist .msgline.show{
+	filter: alpha(opacity=1);
+    -moz-opacity: 1;
+    opacity: 1;
+}
+.step5 .chatlist .msgline.me{
+	padding-right: 0.75rem;
+}
+.step5 .chatlist .msgline .head{
+	width: 0.5rem;
+	height: 0.5rem;
+	position: absolute;
+	left: 0.1rem;
+	top: 0.1rem;
+}
+.step5 .chatlist .msgline.me .head{
+	left: initial;
+	right: 0.1rem;
+}
+.step5 .chatlist .msgline .name{
+	color: #666666;
+	margin-bottom: 0.05rem;
+}
+.step5 .chatlist .msgline.me .name{
+	text-align: right;
+}
+.step5 .chatlist .msgline .msgcontent{
+	padding: 0.08rem;
+	background-color: #fff;
+	border: 1px solid #dcdcdc;
+	margin-right: 0.3rem;
+	border-radius: 0.04rem;
+	position: relative;
+	word-break: break-all;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+.step5 .chatlist .msgline.me .msgcontent{
+	margin-right: 0;
+	background-color: #a2ea62;
+	border: 0;
+	box-shadow: inset 0 0 3px #eee;
+}
+.step5 .chatlist .msgline .msgcontent:before{
+	content: '';
+	width: 0.1rem;
+	height: 0.1rem;
+	background-color: #fff;
+	-webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+	position: absolute;
+	left: -0.06rem;
+	top: 0.15rem;
+	border-bottom: 1px solid #dcdcdc;
+	border-left: 1px solid #dcdcdc;
+}
+.step5 .chatlist .msgline.me .msgcontent:before{
+	left: initial;
+	right: -0.05rem;
+	-webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+    background-color: #a2ea62;
+    border: 0 !important;
+}
+.step5 .chatlist .msgline .msgcontent .tl{
+	color: #7f7f7f;
+	padding: 0 0.05rem 0.05rem;
+	border-bottom: 1px dashed #dcdcdc;
+}
+.step5 .chatlist .msgline .msgcontent .c_head{
+	float: left;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 0.05rem;
+	margin-top: 0.05rem;
+}
+.step5 .chatlist .msgline .msgcontent .c_name{
+	margin-left: 0.6rem;
+	margin-top: 0.05rem;
+}
+.step5 .chatlist .msgline .msgcontent .c_nick{
+	margin-left: 0.6rem;
+	margin-top: 0.12rem;
+	color: #7f7f7f;
+}

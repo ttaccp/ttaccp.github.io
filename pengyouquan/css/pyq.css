@@ -1,0 +1,24 @@
+html, body{
+	background-color: #f0eff5;
+	padding: 0;
+	padding-bottom: 0.4rem;
+}
+.step7 .pyq{
+	width: 100%;
+	display: block;
+}
+.step7 .pyq2{
+	width: 100%;
+	display: block;
+    margin-top: 0.16rem;
+}
+.step7 .toolbar{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.step7 .clickTip{
+	top: 0.11rem;
+    right: 0.8rem;
+}

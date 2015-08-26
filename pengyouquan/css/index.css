@@ -1,0 +1,115 @@
+html,body{
+	background-color: #1b1b1b;
+	color: #fff;
+}
+body{
+	padding: 0 0.15rem;
+}
+.step1 .time{
+	font-size: 0.6rem;
+	text-align: center;
+	margin-top: 0.25rem;
+}
+.step1 .date{
+	font-size: 0.2rem;
+	text-align: center;
+	margin-top: 0.05rem;
+	padding-bottom: 0.1rem;
+	position: relative;
+}
+.step1 .date:before{
+	content: '';
+	width: 200%;
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+	-webkit-transform-origin: 0;
+	transform-origin: 0;
+	border-bottom: 1px solid #494949;
+}
+.step1 .msglist{
+	margin-top: 0.1rem;
+	overflow: hidden;
+    height: 1.8rem;
+}
+.step1 .msglist .msg{
+	position: relative;
+    padding-top: 0.05rem;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.step1 .msglist .msg.show{
+	filter: alpha(opacity=1);
+    -moz-opacity: 1;
+    opacity: 1;
+}
+.step1 .msglist .msg:before{
+	content: '';
+	width: 200%;
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+	-webkit-transform-origin: 0;
+	transform-origin: 0;
+	border-bottom: 1px solid #494949;
+}
+.step1 .msglist .msg .img{
+	width: 100%;
+}
+.step1 .text{
+	font-size: 0.2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.3rem 0;
+}
+.step1 .text .s{
+	-webkit-animation: move 2s linear infinite;
+    animation: move 2s linear infinite;
+    display: block;
+    text-align: center;
+}
+@-webkit-keyframes move{
+	0%{
+		margin-left: 0;
+	}
+	25%{
+		margin-left: -30px;
+	}
+	50%{
+		margin-left: 0;
+	}
+	75%{
+		margin-left: 30px;
+	}
+	100%{
+		margin-left: 0;
+	}
+}
+@keyframes move{
+	0%{
+		margin-left: 0;
+	}
+	25%{
+		margin-left: -30px;
+	}
+	50%{
+		margin-left: 0;
+	}
+	75%{
+		margin-left: 30px;
+	}
+	100%{
+		margin-left: 0;
+	}
+}
