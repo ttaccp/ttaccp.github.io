@@ -55,7 +55,7 @@ $('.comment-line input.txt').live('blur', function(){
 	if(id == '9'){
 		$('#commentbox' + id).append(['<div class="comment-line">',
 										'<span class="s">HR姐姐：</span>你的问题HR姐姐已经收到啦！想知道你的问题会不会在现场被回复？让我们一起锁定831空中宣讲！',
-									'</div>']);
+									'</div>'].join(''));
 	}
 });
 
