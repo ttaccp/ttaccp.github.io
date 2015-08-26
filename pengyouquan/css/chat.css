@@ -41,6 +41,7 @@
 }
 .step5 .chatlist .msgline.me{
 	padding-right: 0.65rem;
+	padding-left: 0.34rem;
 }
 .step5 .chatlist .msgline .head{
 	width: 0.4rem;
